@@ -1,1 +1,3 @@
 # TodoAPI
+
+mongod --nojournal

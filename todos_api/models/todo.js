@@ -7,15 +7,15 @@ const todoSchema = new mongoose.Schema({
         required: "Name connot be blank"
     },
     completed: {
-        tpye: Boolean,
+        type: Boolean,
         default: false
     },
     created_date: {
-        typeof: Date,
+        type: Date,
         default: Date.now
     }
 });
 
 const Todo = mongoose.model("Todo", todoSchema);
 
-export default Todo;
+module.exports =  Todo;
